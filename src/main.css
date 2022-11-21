@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+#content {
+  display: grid;
+  grid-template: .4fr 5fr / 1fr;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Navigation */ 
+#nav {
+  display: grid;
+  grid-template: 1fr / 1fr 5fr 1fr;
+  padding: 5px;
+  background-color: #28282B;
+  color: #fffada;
+}
+#nav-left {
+  display: grid;
+  align-items: center;
+}
+#nav-center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+#nav-right {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.nav-r-items {
+  display: grid;
+  justify-content: center;
+}
+
+/* article */
+
+#article {
+  
+}
+#slide-show-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  justify-items: center;
+  align-items: center;
+
+}
+#album-slider {
+  width: 90%;
+  height: 70%;
+  border: 1px solid #888;
+  display: grid;
+  grid-template: 1fr /  repeat(auto-fit, minmax(5rem, 1fr));
+  padding: 10px;
+}
+.addAlbum {
+  outline: 1px solid #999;
+  margin: 5px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+  color: #888;
+}
+.album-grid {
+  display: grid;
+  grid-template: .5fr 5fr / 1fr;
+  background-color: aquamarine;
+  outline: 1px solid #999;
+  margin: 5px;
+}
+.album-title {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
