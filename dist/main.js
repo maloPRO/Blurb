@@ -358,7 +358,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  font-family: 'Roboto', sans-serif;\n}\n#content {\n  display: grid;\n  grid-template: .4fr 5fr / 1fr;\n  justify-content: center;\n  width: 100vw;\n  height: 100vh;\n}\n\n/* Navigation */ \n#nav {\n  display: grid;\n  grid-template: 1fr / 1fr 5fr 1fr;\n  padding: 5px;\n  background-color: #28282B;\n  color: #fffada;\n}\n#nav-left {\n  display: grid;\n  align-items: center;\n}\n#nav-center {\n  display: grid;\n  justify-content: center;\n  align-items: center;\n\n}\n#nav-right {\n  display: grid;\n  grid-template: 1fr / repeat(3, 1fr);\n  justify-content: center;\n  align-items: center;\n}\n.nav-r-items {\n  display: grid;\n  justify-content: center;\n}\n\n/* article */\n\n#article {\n  \n}\n#slide-show-container {\n  width: 100%;\n  height: 100%;\n  display: grid;\n  grid-template: 1fr / 1fr;\n  justify-items: center;\n  align-items: center;\n\n}\n#album-slider {\n  width: 90%;\n  height: 70%;\n  border: 1px solid #888;\n  display: grid;\n  grid-template: 1fr /  repeat(auto-fit, minmax(5rem, 1fr));\n  padding: 10px;\n}\n.addAlbum {\n  outline: 1px solid #999;\n  margin: 5px;\n  display: grid;\n  align-items: center;\n  justify-content: center;\n  font-size: 8rem;\n  color: #888;\n}\n.album-grid {\n  display: grid;\n  grid-template: .5fr 5fr / 1fr;\n  background-color: aquamarine;\n  outline: 1px solid #999;\n  margin: 5px;\n}\n.album-title {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  font-family: 'Roboto', sans-serif;\n}\n#content {\n  display: grid;\n  grid-template: .4fr 5fr / 1fr;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n}\n\n/* Navigation */ \n#nav {\n  display: grid;\n  grid-template: 1fr / 1fr 5fr 1.2fr 0fr;\n  background-color: #28282B;\n  color: #fffada;\n}\n#nav-left {\n  display: grid;\n  align-items: center;\n  padding: 5px;\n}\n#nav-center {\n  display: grid;\n  justify-content: center;\n  align-items: center;\n  padding: 5px;\n}\n#nav-right {\n  display: grid;\n  grid-template: 1fr / repeat(4, 1fr);\n  justify-content: center;\n  align-items: center;\n  padding: 5px;\n}\n.nav-r-items {\n  display: grid;\n  justify-content: center;\n}\n#site-name {\n  font-size: 2rem;\n  font-style: italic;\n}\n.menu {\n  display: none;\n}\n#menu-items {\n  display: none;\n}\n\n/* article */\n\n#article {\n  \n}\n#slide-show-container {\n  width: 100%;\n  height: 100%;\n  display: grid;\n  grid-template: 1fr / 1fr;\n  justify-items: center;\n  align-items: center;\n\n}\n#album-slider {\n  width: 90%;\n  height: 70%;\n  border: 1px solid #888;\n  display: grid;\n  grid-template: 1fr /  repeat(auto-fit, minmax(10rem, 1fr));\n  padding: 10px;\n}\n.addAlbum {\n  outline: 1px solid #999;\n  margin: 5px;\n  display: grid;\n  align-items: center;\n  justify-content: center;\n  font-size: 8rem;\n  color: #888;\n}\n.album-grid {\n  display: grid;\n  grid-template: .5fr 5fr / 1fr;\n  background-color: aquamarine;\n  outline: 1px solid #999;\n  margin: 5px;\n}\n.album-title {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n}\n\n\n@media only screen and (max-width: 700px) {\n  #nav {\n    grid-template: 1fr / 1fr 5fr 0fr 1fr;\n  }\n  .nav-r-items {\n    display: none;\n  }\n  #site-name {\n    font-size: 1.2rem;\n  }\n  .menu {\n    display: grid; \n    align-items: center;\n    justify-content: center;\n  \n  }\n  #menu-items {\n    padding-top: 5px;\n    background-color: #111;\n    width: 100%;\n    grid-area: 2/1/3/5;\n  }\n  #menu-items a {\n    color: white;\n    padding: 5px;\n    text-decoration: none;\n    font-size: 1rem;\n    display: block;\n  \n}\n#menu-items a:hover {\n  color: #111;\n  background-color: #999;\n}\n.menu img {\n  width: 1.3rem;\n}\n  #album-slider {\n    height: 90%;\n    display: grid;\n    grid-template: repeat(auto-fit, minmax(2rem, 1fr)) / repeat(2, 1fr);\n    \n  }\n  .addAlbum {\n    font-size: 3rem;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -745,7 +745,10 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _albums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prettier__WEBPACK_IMPORTED_MODULE_2__);
 // eslint-disable-next-line prettier/prettier, no-unused-vars
+
 
 
 
@@ -758,6 +761,20 @@ _albums__WEBPACK_IMPORTED_MODULE_1__["default"].addAlbum('Album 4');
 
 _albums__WEBPACK_IMPORTED_MODULE_1__["default"].displayAlbum()
 console.log(list);
+
+const myFunction = () => {
+  var x = document.getElementById("menu-items");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    document.getElementById('nav').style = 'grid-template: 1fr / 1fr 5fr 0fr 1fr;'
+  } else {
+    x.style.display = "block";
+    document.getElementById('nav').style = 'grid-template: 1fr 3fr / 1fr 5fr 0fr 1fr;'
+    
+  }
+}
+
+document.querySelector('.menu').addEventListener('click', myFunction)
 
 })();
 

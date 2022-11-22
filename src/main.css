@@ -9,37 +9,48 @@
   display: grid;
   grid-template: .4fr 5fr / 1fr;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 /* Navigation */ 
 #nav {
   display: grid;
-  grid-template: 1fr / 1fr 5fr 1fr;
-  padding: 5px;
+  grid-template: 1fr / 1fr 5fr 1.2fr 0fr;
   background-color: #28282B;
   color: #fffada;
 }
 #nav-left {
   display: grid;
   align-items: center;
+  padding: 5px;
 }
 #nav-center {
   display: grid;
   justify-content: center;
   align-items: center;
-
+  padding: 5px;
 }
 #nav-right {
   display: grid;
-  grid-template: 1fr / repeat(3, 1fr);
+  grid-template: 1fr / repeat(4, 1fr);
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 .nav-r-items {
   display: grid;
   justify-content: center;
+}
+#site-name {
+  font-size: 2rem;
+  font-style: italic;
+}
+.menu {
+  display: none;
+}
+#menu-items {
+  display: none;
 }
 
 /* article */
@@ -61,7 +72,7 @@
   height: 70%;
   border: 1px solid #888;
   display: grid;
-  grid-template: 1fr /  repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template: 1fr /  repeat(auto-fit, minmax(10rem, 1fr));
   padding: 10px;
 }
 .addAlbum {
@@ -84,4 +95,53 @@
   display: grid;
   align-items: center;
   justify-items: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+  #nav {
+    grid-template: 1fr / 1fr 5fr 0fr 1fr;
+  }
+  .nav-r-items {
+    display: none;
+  }
+  #site-name {
+    font-size: 1.2rem;
+  }
+  .menu {
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #menu-items {
+    padding-top: 5px;
+    background-color: #111;
+    width: 100%;
+    grid-area: 2/1/3/5;
+  }
+  #menu-items a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  
+}
+#menu-items a:hover {
+  color: #111;
+  background-color: #999;
+}
+.menu img {
+  width: 1.3rem;
+}
+  #album-slider {
+    height: 90%;
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(2rem, 1fr)) / repeat(2, 1fr);
+    
+  }
+  .addAlbum {
+    font-size: 3rem;
+  }
 }
