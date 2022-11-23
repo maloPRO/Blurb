@@ -44,8 +44,9 @@ const albumModule = (function () {
 
 })();
 
-albumModule.addAlbum('sdfg');
-albumModule.addAlbum('sdfg');
+albumModule.addAlbum('Album one');
+albumModule.addAlbum('Album two');
+albumModule.addAlbum('Album three');
 
 albumModule.displayAlbum()
 console.log(albumModule.albumList)
