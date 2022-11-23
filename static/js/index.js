@@ -1,5 +1,7 @@
 const albumModule = (function () {
+
   const albumList = [];
+
   class Album {
     constructor(title) {
       this.title = title;
@@ -15,7 +17,6 @@ const albumModule = (function () {
     let albumSlider = document.getElementById('album-slider');
 
     const addAlbum = document.createElement('div');
-    addAlbum.textContent = '+';
     addAlbum.setAttribute('class', 'addAlbum');
     albumSlider.appendChild(addAlbum);
 
@@ -48,5 +49,4 @@ albumModule.addAlbum('Album one');
 albumModule.addAlbum('Album two');
 albumModule.addAlbum('Album three');
 
-albumModule.displayAlbum()
-console.log(albumModule.albumList)
+albumModule.displayAlbum();
