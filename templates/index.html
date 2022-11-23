@@ -4,10 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/main.css">
   <title>Blurbo</title>
 </head>
 <body>
+  <div id="content">
+    <div id="nav">
+      <div id="nav-left" class="nav-section">
+        <div id="logo">logo</div>
+      </div>
+      <div id="nav-center" class="nav-section">
+        <div id="site-name">Blurbo</div>
+      </div>
+      <div id="nav-right" class="nav-section">
+        <div class="nav-r-items">Gallery</div>
+        <div class="nav-r-items">About</div>
+        <div class="nav-r-items">Contact</div>
+      </div>
+      <div class="menu">
+        <img src="/src/images/menuIcon.png" alt="">
+      </div>
+      <div id="menu-items">
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div id="article">
+      <div id="slide-show-container">
+        <div id="album-slider"></div>
+      </div>
+    </div>
+  </div>
   
 </body>
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="/static/js/index.js"></script>
 </html>
